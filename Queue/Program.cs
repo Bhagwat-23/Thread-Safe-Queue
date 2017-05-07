@@ -128,12 +128,20 @@ namespace ThreadSafeQueue
             return false;
         }
 
+        /// <summary>
+        /// Print Queue data
+        /// </summary>
         public void PrintQueue()
         {
             for (int i = front; i <= rear; i++)
                 Console.WriteLine(Q[i]);
         }
 
+        /// <summary>
+        /// Print queue operations (this method is optional and can be removed.")
+        /// </summary>
+        /// <param name="operation"></param>
+        /// <param name="item"></param>
         private void PrintOperation(Operation operation, object item)
         {
             Thread t = Thread.CurrentThread;
